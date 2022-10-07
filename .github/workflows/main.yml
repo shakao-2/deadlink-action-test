@@ -6,6 +6,6 @@ jobs:
     name: Deadlink scanner
     steps:
       - name: Scan links
-        uses: shakao-2/deadlink-crawl-test@v1.6
+        uses: shakao-2/deadlink-crawl-test@v1.7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
