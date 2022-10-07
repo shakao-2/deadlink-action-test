@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: shakao-2/deadlink-crawl-test@v1.0
+        uses: shakao-2/deadlink-crawl-test@v1.1
         with:
           who-to-greet: 'TEST'
       # Use the output from the `hello` step
