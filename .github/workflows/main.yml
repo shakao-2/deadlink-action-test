@@ -3,13 +3,9 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Deadlink scanner
     steps:
-      - name: Hello world action step
-        id: hello
-        uses: shakao-2/deadlink-crawl-test@v1.4
+      - name: Scan links
+        uses: shakao-2/deadlink-crawl-test@v1.5
         with:
-          who-to-greet: 'TEST'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
